@@ -1,0 +1,1 @@
+In this project the complex functions including trigonometric, hyperbolic, sigmoid, and arctangent have been implemented in Stochastic Computing utilizing hardware-friendly Van der Corput (VDC) sequences.

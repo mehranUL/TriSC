@@ -1,7 +1,7 @@
 %Calculating the tan(x) using SC calculations.
 %The input range is x is in [0,1] interval (in Radian)
 
-function [tan_vdc, tan_sobol, tan_lfsr] = tan_vdc(X, N)
+function [tan_vdc, tan_sobol, tan_lfsr] = tangent_vdc(X, N)
 format long
 if X > 1 || X < 0
     fprintf("Error");

@@ -1,7 +1,7 @@
 % Please visit: https://ieeexplore.ieee.org/document/8049760
 % and https://en.wikipedia.org/wiki/Linear-feedback_shift_register
 
-function [bitstream,seed_scalar] = LFSR3_2(seed, scalar, N)
+function [bitstream,seed_scalar] = LFSR_TrigonoSC2(seed, scalar, N)
 
 %--------------------------------------------------------------------------
 % N = 8

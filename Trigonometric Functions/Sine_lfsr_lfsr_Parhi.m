@@ -9,9 +9,10 @@ else
 
 
 [~,lfval] = LFSR_TrigonoSC([true false true true true false false false false false],X,N); %N=1024
+[~,lfval2] = LFSR_TrigonoSC2([false true false true false false false true false true],N/2,N); %N=1024
 %[~,lfval] = LFSR_TrigonoSC([true false true false true false false false false],X,N); %N=512
 lfval = lfval/N;
-
+lfval2 = lfval2/N;
 
 
 %sin_vdc = zeros(1,N);
@@ -30,13 +31,13 @@ X2_stream_lfsr170 = zeros(1, N);
         if X > lfval(k)
             X2_stream_lfsr(k) = 1;
         end
-        if 1/42 > lfval(k)
+        if 1/42 > lfval2(k)
             X2_stream_lfsr24(k) = 1;
         end
-        if 1/20 > lfval(k)
+        if 1/20 > lfval2(k)
             X2_stream_lfsr51(k) = 1;
         end
-        if 1/6 > lfval(k)
+        if 1/6 > lfval2(k)
             X2_stream_lfsr170(k) = 1;
         end
         

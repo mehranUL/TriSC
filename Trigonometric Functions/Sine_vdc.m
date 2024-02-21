@@ -11,8 +11,8 @@ else
 %N = 1024;
 sobol = net(sobolset(256), N);
 
-[~,lfval] = LFSR_TrigonoSC([true false true true true false false false false false],N/2,N); %N=1024
-%[~,lfval] = LFSR_TrigonoSC([true false true false true false false false false],N/2,N); %N=512
+[~,lfval] = LFSR_TrigonoSC([true false true true true false false false false false],X,N); %N=1024
+%[~,lfval] = LFSR_TrigonoSC([true false true false true false false false false],X,N); %N=512
 lfval = lfval/N;
 
 vd(:,1) = vdcorput(N-1,2);

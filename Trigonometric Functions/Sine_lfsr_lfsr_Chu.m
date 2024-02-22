@@ -9,14 +9,14 @@ else
 
 
 if N == 1024
-    [~,lfval] = LFSR_TrigonoSC([true false true true true false false false false false],X,N); %N=1024
-    [~,lfval2] = LFSR_TrigonoSC2([false true false true false false false true false true],N/2,N); %N=1024
+    [~,lfval] = LFSR3([false false true true true false false false true true],N/2,N); %N=1024
+    [~,lfval2] = LFSR3_2([false true false true false false false true false true],N/2,N); %N=1024
 elseif N == 512
-    [~,lfval] = LFSR_TrigonoSC([true false true false true false false false false],X,N); %N=512
-    [~,lfval2] = LFSR_TrigonoSC2([true false true true false true false false true],N/2,N); %N=512
+    [~,lfval] = LFSR3([true true true false false false false false false],N/2,N); %N=512
+    [~,lfval2] = LFSR3_2([false false true true true true false false true],N/2,N); %N=512
 elseif N == 256
-    [~,lfval] = LFSR_TrigonoSC([true false true false true false false false],N/2,N); %N=256
-    [~,lfval2] = LFSR_TrigonoSC2([false false false false true true false false],N/2,N); %N=256
+    [~,lfval] = LFSR3([true true true false false false true false],N/2,N); %N=256
+    [~,lfval2] = LFSR3_2([false false false false true true false false],N/2,N); %N=256
 end
 
 lfval = lfval/N;

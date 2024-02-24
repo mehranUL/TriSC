@@ -59,7 +59,7 @@ X5_stream_vdc512 = zeros(1, N);
         if 1/12 > vd(k,4)
             X4_stream_vdc85(k) = 1;
         end
-        if 1/2 > vd(k,7)
+        if 1/2 > vd(k,8)
             X5_stream_vdc512(k) = 1;
         end
     end
